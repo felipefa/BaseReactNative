@@ -1,37 +1,16 @@
 import React from 'react';
-import { SafeAreaView, StyleSheet, Text } from 'react-native';
 
-const styles = StyleSheet.create({
-  sectionContainer: {
-    backgroundColor: '#333',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: '100%',
-    padding: 30,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-    color: '#fff',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-    color: '#ddd',
-  },
-});
+import { Container, Title, Description } from './styles';
 
 const Main = () => {
   return (
-    <SafeAreaView style={styles.sectionContainer}>
-      <Text style={styles.sectionTitle}>Base React Native</Text>
-      <Text style={styles.sectionDescription}>
+    <Container>
+      <Title>Base React Native</Title>
+      <Description>
         A base React Native app, configured with ESlint, Prettier, EditorConfig,
-        Reactotron and React Navigation.
-      </Text>
-    </SafeAreaView>
+        Reactotron, React Navigation and Styled Components.
+      </Description>
+    </Container>
   );
 };
 
