@@ -1,5 +1,7 @@
 import React from 'react';
-import {SafeAreaView, StyleSheet, View, Text, StatusBar} from 'react-native';
+import { SafeAreaView, StyleSheet, View, Text, StatusBar } from 'react-native';
+
+import './config/ReactotronConfig';
 
 const styles = StyleSheet.create({
   sectionContainer: {
