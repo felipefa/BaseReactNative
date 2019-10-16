@@ -1,23 +1,6 @@
 import React from 'react';
 import {SafeAreaView, StyleSheet, View, Text, StatusBar} from 'react-native';
 
-const App = () => {
-  return (
-    <>
-      <StatusBar backgroundColor="#333" barStyle="light-content" />
-      <SafeAreaView>
-        <View style={styles.sectionContainer}>
-          <Text style={styles.sectionTitle}>Base React Native</Text>
-          <Text style={styles.sectionDescription}>
-            A base React Native app, configured with ESlint, Prettier and
-            Reactotron.
-          </Text>
-        </View>
-      </SafeAreaView>
-    </>
-  );
-};
-
 const styles = StyleSheet.create({
   sectionContainer: {
     backgroundColor: '#333',
@@ -39,5 +22,22 @@ const styles = StyleSheet.create({
     color: '#ddd',
   },
 });
+
+const App = () => {
+  return (
+    <>
+      <StatusBar backgroundColor="#333" barStyle="light-content" />
+      <SafeAreaView>
+        <View style={styles.sectionContainer}>
+          <Text style={styles.sectionTitle}>Base React Native</Text>
+          <Text style={styles.sectionDescription}>
+            A base React Native app, configured with ESlint, Prettier and
+            Reactotron.
+          </Text>
+        </View>
+      </SafeAreaView>
+    </>
+  );
+};
 
 export default App;
